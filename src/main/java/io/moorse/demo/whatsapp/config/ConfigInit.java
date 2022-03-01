@@ -38,19 +38,19 @@ public class ConfigInit {
 
 
       List<Item> itensMenuInicial = new ArrayList<Item>();
-      itensMenuInicial.add(new Item("Para escolher sua pizza", ItemType.MENU.name(), 1, menuSabores));
-      itensMenuInicial.add(new Item("Para escolher o tipo de massa", ItemType.MENU.name(), 2, menuMassas));
-      itensMenuInicial.add(new Item("Para escolher os adicionais", ItemType.MENU.name(), 3, menuAdicionais));
-      itensMenuInicial.add(new Item("Finalizar Pedido", ItemType.MENU.name(), 4, menuInicial));
+      itensMenuInicial.add(new Item(" ⚽ Reporte actividades realizadas", ItemType.MENU.name(), 1, menuSabores));
+      itensMenuInicial.add(new Item(" ⚽ Reporte horas/cancha", ItemType.MENU.name(), 2, menuMassas));
+      itensMenuInicial.add(new Item(" ⚽ Reporte uso de materiales", ItemType.MENU.name(), 3, menuAdicionais));
+      itensMenuInicial.add(new Item(" ⚽ Finalizar", ItemType.MENU.name(), 4, menuInicial));
 
       menuInicial.setItems(itensMenuInicial);
       menuRepository.save(menuInicial);
 
       // Menu Sabores
       List<Item> itensMenuSabores = new ArrayList<Item>();
-      itensMenuSabores.add(new Item("🍗 Frango", ItemType.ITEM.name(), 1, menuInicial));
-      itensMenuSabores.add(new Item("🥩 Calabresa", ItemType.ITEM.name(), 2, menuInicial));
-      itensMenuSabores.add(new Item("🍳 Portugues", ItemType.ITEM.name(), 3, menuInicial));
+      itensMenuSabores.add(new Item(" 🗓️ Ultima semana", ItemType.ITEM.name(), 1, menuInicial));
+      itensMenuSabores.add(new Item(" 🗓️ Ultimo mes", ItemType.ITEM.name(), 2, menuInicial));
+      itensMenuSabores.add(new Item(" ⛹️ Por entrenador", ItemType.ITEM.name(), 3, menuInicial));
 
       menuSabores.setItems(itensMenuSabores);
       menuRepository.save(menuSabores);
@@ -58,9 +58,9 @@ public class ConfigInit {
 
       // Menu Massas
       List<Item> itensMenuMassas = new ArrayList<Item>();
-      itensMenuMassas.add(new Item(" 🥖 Fina", ItemType.ITEM.name(), 1, menuInicial));
-      itensMenuMassas.add(new Item(" 🍞 Grossa", ItemType.ITEM.name(), 2, menuInicial));
-      itensMenuMassas.add(new Item(" 🍫 Recheada", ItemType.ITEM.name(), 3, menuInicial));
+      itensMenuMassas.add(new Item(" 🗓️ Por semana", ItemType.ITEM.name(), 1, menuInicial));
+      itensMenuMassas.add(new Item(" 🗓️ Por mes", ItemType.ITEM.name(), 2, menuInicial));
+      itensMenuMassas.add(new Item(" ⛹️ Por entrenador", ItemType.ITEM.name(), 3, menuInicial));
 
       menuMassas.setItems(itensMenuMassas);
       menuRepository.save(menuMassas);
@@ -68,9 +68,11 @@ public class ConfigInit {
 
       // Menu adicionais
       List<Item> itensMenuAdicionais = new ArrayList<Item>();
-      itensMenuAdicionais.add(new Item(" 🥓 Bacon", ItemType.ITEM.name(), 1, menuInicial));
-      itensMenuAdicionais.add(new Item(" 🧀 Queijo", ItemType.ITEM.name(), 2, menuInicial));
-      itensMenuAdicionais.add(new Item(" 🥗 Legumes", ItemType.ITEM.name(), 3, menuInicial));
+      itensMenuAdicionais.add(new Item(" 🗓️ Por semana", ItemType.ITEM.name(), 1, menuInicial));
+      itensMenuAdicionais.add(new Item(" 🗓️ Por mes", ItemType.ITEM.name(), 2, menuInicial));
+      itensMenuAdicionais.add(new Item(" ⛹️ Por entrenador", ItemType.ITEM.name(), 3, menuInicial));
+      itensMenuAdicionais.add(new Item(" ⚽ Mas usados", ItemType.ITEM.name(), 4, menuInicial));
+      
 
       menuAdicionais.setItems(itensMenuAdicionais);
       menuRepository.save(menuAdicionais);

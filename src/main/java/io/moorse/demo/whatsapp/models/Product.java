@@ -82,7 +82,7 @@ public class Product {
   @Override
   public String toString() {
     StringBuilder res = new StringBuilder();
-    res.append("*Seu pedido atual:* " + Constants.BREAK_LINE);
+    res.append("*Su pedido actual:* " + Constants.BREAK_LINE);
     res.append(items.stream().map(item ->  item.getName() + Constants.BREAK_LINE).reduce("", String::concat));
     return res.toString();
   }

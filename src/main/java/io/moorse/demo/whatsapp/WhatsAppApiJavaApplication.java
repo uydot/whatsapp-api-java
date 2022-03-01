@@ -18,7 +18,7 @@ public class WhatsAppApiJavaApplication {
     Environment env = app.run(args).getEnvironment();
     logger.info("\n----------------------------------------------------------\n\t" +
         "WhatsApp Api Java está rodando! Acesse uma das URLs:\n\t" +
-        "Local: \t\thttp://localhost:{}\n\t" +
+        "Local: \t\thttp://127.0.0.1:{}\n\t" +
         "Externa: \thttp://{}:{}\n----------------------------------------------------------",
       env.getProperty("server.port"),
       InetAddress.getLocalHost().getHostAddress(),
